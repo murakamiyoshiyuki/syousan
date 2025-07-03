@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>称賛シュミレーター - あなたの言葉が褒めちぎられる！</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>称賛シュミレーター</h1>
+            <p class="subtitle">どんな投稿でも過剰に褒めちぎられる体験を。</p>
+        </header>
+        
+        <main>
+            <div class="post-form">
+                <div class="user-info">
+                    <div class="avatar"></div>
+                    <div class="input-area">
+                        <textarea id="postInput" placeholder="今どうしてる？" maxlength="280"></textarea>
+                        <div class="post-actions">
+                            <span class="char-count">0 / 280</span>
+                            <button id="postButton" class="post-btn">ポストする</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="timeline" class="timeline">
+                <!-- 投稿とリプライがここに表示されます -->
+            </div>
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
